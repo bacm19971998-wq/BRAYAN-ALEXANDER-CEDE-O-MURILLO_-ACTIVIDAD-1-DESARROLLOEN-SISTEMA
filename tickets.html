@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Tickets Registrados</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f6f8;
+            line-height: 1.6;
+        }
+        /* Estilos Navegación */
+        nav {
+            background-color: #2c3e50;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 0 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        nav a:hover, .activo {
+            background-color: #2980b9;
+            border-radius: 4px;
+        }
+        /* Estilos Cabecera */
+        header {
+            background-color: #34495e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        /* Conten principal */
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        section {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        /* Estilos de la Tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table th {
+            background-color: #34495e;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+        /* Clases para colores de estado */
+        .estado-alta { color: #e74c3c; font-weight: bold; }
+        .estado-media { color: #f39c12; font-weight: bold; }
+        .estado-baja { color: #27ae60; font-weight: bold; }
+        .estado-proceso { color: #3498db; font-weight: bold; }
+        /* Pie de página */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Etiqueta semántica: Cabecera -->
+    <header>
+        <h1>🔧 Sistema de Gestión de Incidentes</h1>
+        <p>Universidad Técnica de Manabí - Listado de Reportes</p>
+    </header>
+
+    <!-- Etiqueta semántica: Navegación -->
+    <nav>
+        <a href="index.html">🏠 Inicio</a>
+        <a href="reportar.html">📝 Reportar Incidente</a>
+        <a href="tickets.html" class="activo">📋 Ver Tickets</a>
+    </nav>
+
+    <!-- Etiqueta semántica: Contenido Principal -->
+    <main>
+        <!-- Etiqueta semántica: Sección -->
+        <section>
+            <h2>📋 Listado Organizado de Tickets Registrados</h2>
+            
+            <!-- ✅ TABLA COMO LO PIDE EL PUNTO 3 -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>N° Ticket</th>
+                        <th>Fecha</th>
+                        <th>Título / Asunto</th>
+                        <th>Categoría</th>
+                        <th>Prioridad</th>
+                        <th>Estado Actual</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>INC-001</td>
+                        <td>02/06/2026</td>
+                        <td>Sin conexión a internet</td>
+                        <td>🔌 Red</td>
+                        <td class="estado-alta">🔴 Alta</td>
+                        <td class="estado-proceso">En Proceso</td>
+                    </tr>
+                    <tr>
+                        <td>INC-002</td>
+                        <td>01/06/2026</td>
+                        <td>Equipo no enciende / Monitor</td>
+                        <td>🖥️ Hardware</td>
+                        <td class="estado-media">🟡 Media</td>
+                        <td class="estado-proceso">En Proceso</td>
+                    </tr>
+                    <tr>
+                        <td>INC-003</td>
+                        <td>30/05/2026</td>
+                        <td>Error al ingresar al sistema</td>
+                        <td>💿 Software</td>
+                        <td class="estado-alta">🔴 Alta</td>
+                        <td class="estado-baja">Solucionado</td>
+                    </tr>
+                    <tr>
+                        <td>INC-004</td>
+                        <td>02/06/2026</td>
+                        <td>Teclado no responde</td>
+                        <td>🖥️ Hardware</td>
+                        <td class="estado-baja">🟢 Baja</td>
+                        <td class="estado-baja">Solucionado</td>
+                    </tr>
+                    <tr>
+                        <td>INC-005</td>
+                        <td>03/06/2026</td>
+                        <td>Lentitud en la red general</td>
+                        <td>🔌 Red</td>
+                        <td class="estado-media">🟡 Media</td>
+                        <td class="estado-proceso">Pendiente</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Etiqueta semántica: Pie de página -->
+    <footer>
+        <p>© 2026 - Desarrollado por Estudiante | Universidad técnica de manabí | desarrollo de sistemas informáticos</p>
+    </footer>
+
+</body>
+</html>

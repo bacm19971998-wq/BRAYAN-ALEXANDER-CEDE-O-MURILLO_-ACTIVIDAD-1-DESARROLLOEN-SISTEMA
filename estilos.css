@@ -1,0 +1,95 @@
+/* Reinicio general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    line-height: 1.6;
+}
+
+/* Estilos de Navegación */
+nav {
+    background-color: #2c3e50;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav a:hover, .activo {
+    background-color: #2980b9;
+    border-radius: 4px;
+}
+
+/* Estilos de Cabecera */
+header {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contenido Principal */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.texto-centrado {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.resumen-estado {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+article {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    width: 220px;
+}
+
+article h3 {
+    font-size: 2em;
+    color: #e74c3c;
+}
+
+/* Pie de página */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}

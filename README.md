@@ -1,17 +1,30 @@
-# BRAYAN-ALEXANDER-CEDE-O-MURILLO_-ACTIVIDAD-1-DESARROLLOEN-SISTEMA
-# 📋 Sistema de Gestión de Incidentes y Tickets
+# SISTEMA DE GESTIÓN DE INCIDENTES
+## Estudiante: Brayan Cedeno
+## Materia: Desarrollo de Sistemas Informáticos
 
-**Proyecto desarrollado con HTML y CSS**  
-*Universidad Técnica de Manabí | Desarrollo de Sistemas Informáticos*
+### 🛠️ Tecnologías utilizadas
+- Node.js
+- Express.js
+- MongoDB
+- HTML5 + CSS3
+- Postman (pruebas de API)
 
----
+### 📂 Estructura del proyecto
+- `controllers/`: Lógica de las operaciones
+- `models/`: Modelo de la base de datos
+- `routes/`: Rutas de la API
+- `server.js`: Archivo principal del servidor
+- `.env`: Variables de conexión
+- Archivos `.html`: Interfaz gráfica
 
-## 📝 Descripción General
-Este proyecto es una interfaz web básica para gestionar reportes de incidentes y seguimiento de tickets. Está diseñado para simular el funcionamiento de un sistema de soporte técnico, permitiendo navegar entre las secciones principales: panel de inicio, formulario de reporte y listado de solicitudes.
+### 🚀 Cómo ejecutar
+1. Instalar dependencias: `npm install`
+2. Encender servidor: `node server.js`
+3. Probar rutas en: `http://localhost:3000/api/incidentes`
 
-El código está organizado siguiendo buenas prácticas: **estructura HTML separada de los estilos CSS**, lo que facilita su mantenimiento, modificación y ampliación futura.
-
----
-
-## 🗂️ Estructura de Archivos
-El proyecto está compuesto por 4 archivos, organizados de la siguiente forma:
+### ✅ Pruebas realizadas
+- [x] Crear incidente
+- [x] Listar todos
+- [x] Consultar uno por ID
+- [x] Actualizar incidente
+- [x] Eliminar incidente
